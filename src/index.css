@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surfaces — off-white replaces the old black */
+  --color-linen: #fffdf6;
+  --color-parchment: #f7f0da;
+
+  /* Brand */
+  --color-sun: #ffd400;
+  --color-sun-soft: #fff3b8;
+  --color-gold: #7a5c00; /* yellow-family tone that passes contrast on linen */
+
+  /* Ink — a deep plum instead of pure black, pairs with gold */
+  --color-plum: #2b1a2f;
+  --color-plum-soft: #5c4a5f;
+
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  @apply bg-linen text-plum font-sans antialiased;
+}
+
+::selection {
+  background: var(--color-sun);
+  color: var(--color-plum);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-plum);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
