@@ -78,10 +78,17 @@ export const speakers = [
 ];
 
 export const socials = [
-  { label: "Facebook", href: "https://facebook.com/", icon: "facebook" },
-  { label: "X (Twitter)", href: "https://x.com/", icon: "x" },
-  { label: "Instagram", href: "https://instagram.com/", icon: "instagram" },
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: "linkedin" },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/ladytoladyconference",
+    icon: "facebook",
+  },
+  // { label: "X (Twitter)", href: "https://x.com/", icon: "x" },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/ladytoladyconference/",
+    icon: "instagram",
+  },
 ] as const;
 
 // ── Upcoming conference banner ──────────────────────────────────────────
